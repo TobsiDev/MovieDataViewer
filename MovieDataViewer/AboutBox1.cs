@@ -14,12 +14,18 @@ namespace MovieDataViewer
         public AboutBox1()
         {
             InitializeComponent();
-            this.Text = String.Format("About {0}", AssemblyTitle);
+            /*this.Text = String.Format("About {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
+            this.textBoxDescription.Text = AssemblyDescription;*/
+            this.Text = String.Format("About Movie Viewer");
+            this.labelProductName.Text = "Movie Viewer";
+            this.labelVersion.Text = String.Format("Version 0.0.1");
+            this.labelCopyright.Text = AssemblyCopyright;
+            this.labelCompanyName.Text = "Made by Tobsi";
+            //this.textBoxDescription.Text = "Github: TobsiDev https://github.com/TobsiDev/MovieDataViewer \n Twitter: @TobsiDev";
         }
 
         #region Assembly Attribute Accessors
@@ -110,6 +116,16 @@ namespace MovieDataViewer
             frm.FormClosing += delegate { this.Show(); };
             frm.Show();*/
             this.Close(); // There is a memory leak somewhere (It happens whenever I close this and press the Home button again)
+        }
+
+        private void labelProductName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelVersion_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

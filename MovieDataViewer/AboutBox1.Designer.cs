@@ -88,8 +88,9 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(316, 20);
             this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "Product Name";
+            this.labelProductName.Text = "Movie Viewer";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelProductName.Click += new System.EventHandler(this.labelProductName_Click);
             // 
             // labelVersion
             // 
@@ -100,8 +101,9 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(316, 20);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "Version";
+            this.labelVersion.Text = "Version: 0.0.1";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelVersion.Click += new System.EventHandler(this.labelVersion_Click);
             // 
             // labelCopyright
             // 
@@ -124,12 +126,13 @@
             this.labelCompanyName.Name = "labelCompanyName";
             this.labelCompanyName.Size = new System.Drawing.Size(316, 20);
             this.labelCompanyName.TabIndex = 22;
-            this.labelCompanyName.Text = "Company Name";
+            this.labelCompanyName.Text = "Made by Tobsi";
             this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBoxDescription
             // 
             this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxDescription.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxDescription.Location = new System.Drawing.Point(167, 123);
             this.textBoxDescription.Margin = new System.Windows.Forms.Padding(7, 3, 4, 3);
             this.textBoxDescription.Multiline = true;
@@ -139,7 +142,7 @@
             this.textBoxDescription.Size = new System.Drawing.Size(316, 147);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
-            this.textBoxDescription.Text = "Description";
+            this.textBoxDescription.Text = resources.GetString("textBoxDescription.Text");
             // 
             // okButton
             // 
